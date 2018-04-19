@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Livenation Mobile</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="content">
+      <div style="float:left;" class="iphone-img">
+          <img src="images/iphone7.png">
+          <div class="tnc">
+            <p>VIEW CONCERT CREDIT <a href="terms.html">TERMS & CONDITIONS<a></p>
+          </div>
+      </div>
+      <div>
+          <img class="app-icon center-div" src="images/app-icon.png">
+          <img class="desc-text center-div" src="images/desc-text.png">
+          <img class="presented-by center-div" style="margin-bottom: 10px;" src="images/presented-by.png">
+          <img class="budlight center-div" src="images/budlight.png">
+          <div class="dload-btns">
+            <a class="apple-div" href="https://livenation.app.link/taPUd0pRWE">
+              <img class="itunes-btn" src="images/itunes-store.png">
+            </a>
+            <a class="droid-div" href="https://livenation.app.link/xI7kcExRWE">
+              <img class="gplay-btn" src="images/google-play.png">
+            </a>
+          </div>
+      </div>
+   </div>
+   <div class="tnc-mob">
+     <p>VIEW CONCERT CREDIT <a href="terms.html">TERMS & CONDITIONS<a></p>
+   </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function (){
+       if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+         $('.apple-div').addClass('hidden-xs');
+         $( ".content" ).click(function() {
+            window.location.href = 'https://livenation.app.link/xI7kcExRWE';
+          });
+       }
+       if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1 || navigator.userAgent.toLowerCase().indexOf("ipad") > -1){
+         $('.droid-div').addClass('hidden-xs');
+         $( ".content" ).click(function() {
+            window.location.href = 'https://livenation.app.link/taPUd0pRWE';
+          });
+       }
+      });
+    </script>
+  </body>
+</html>

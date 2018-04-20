@@ -1,10 +1,169 @@
+/* Live Nation Font
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+    font-family: 'live_nationextrabold_italic';
+    src: url('fonts/livenation-extrabolditalic.eot');
+    src: url('fonts/livenation-extrabolditalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/livenation-extrabolditalic.woff2') format('woff2'),
+         url('fonts/livenation-extrabolditalic.woff') format('woff'),
+         url('fonts/livenation-extrabolditalic.ttf') format('truetype'),
+         url('fonts/livenation-extrabolditalic.svg#live_nationextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'live_nationbold_italic';
+    src: url('fonts/livenation-bolditalic.eot');
+    src: url('fonts/livenation-bolditalic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/livenation-bolditalic.woff2') format('woff2'),
+         url('fonts/livenation-bolditalic.woff') format('woff'),
+         url('fonts/livenation-bolditalic.ttf') format('truetype'),
+         url('fonts/livenation-bolditalic.svg#live_nationbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'live_nationitalic';
+    src: url('fonts/livenation-italic.eot');
+    src: url('fonts/livenation-italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/livenation-italic.woff2') format('woff2'),
+         url('fonts/livenation-italic.woff') format('woff'),
+         url('fonts/livenation-italic.ttf') format('truetype'),
+         url('fonts/livenation-italic.svg#live_nationitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'live_nationextrabold';
+    src: url('fonts/livenation-extrabold.eot');
+    src: url('fonts/livenation-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/livenation-extrabold.woff2') format('woff2'),
+         url('fonts/livenation-extrabold.woff') format('woff'),
+         url('fonts/livenation-extrabold.ttf') format('truetype'),
+         url('fonts/livenation-extrabold.svg#live_nationextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'live_nationbold';
+    src: url('fonts/livenation-bold.eot');
+    src: url('fonts/livenation-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/livenation-bold.woff2') format('woff2'),
+         url('fonts/livenation-bold.woff') format('woff'),
+         url('fonts/livenation-bold.ttf') format('truetype'),
+         url('fonts/livenation-bold.svg#live_nationbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'live_nationregular';
+    src: url('fonts/livenation-regular.eot');
+    src: url('fonts/livenation-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/livenation-regular.woff2') format('woff2'),
+         url('fonts/livenation-regular.woff') format('woff'),
+         url('fonts/livenation-regular.ttf') format('truetype'),
+         url('fonts/livenation-regular.svg#live_nationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	font-size: 62.5%;
+}
+
 body {
-  background: url(images/background.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 50px;
+	background: url('images/background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 50px;
+	font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	line-height: 1.4;
+	font-family:'livenation-regular', 'proxima nova', arial, helvetica, sans-serif;
+}
+
+img {max-width:100%;}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 2rem;}
+
+.bronto{font-size: 4.11rem;}
+h1, .yotta {font-size: 3.65rem;}
+.zetta {font-size: 3.24rem;}
+h2, .exa {font-size: 2.88rem;}
+.peta {font-size: 2.56rem;}
+h3, .tera {font-size: 2.28rem;}
+.giga {font-size: 2.03rem;}
+h4, .mega {font-size: 1.8rem;}
+h5, .kilo {font-size: 1.6rem;}
+.hecto {font-size: 1.42rem;}
+p, .uno {font-size: 1.26rem;}
+h6, .centi {font-size: 1.12rem;}
+.milli	{font-size: 1.0rem;}
+
+
+/* For devices larger than 375px */
+@media (min-width: 23.4375em) {
+	.bronto {font-size: 4.62rem;}
+	h1, .yotta {font-size: 4.11rem;}
+	.zetta {font-size: 3.65rem;}
+	h2, .exa {font-size: 3.24rem;}
+	.peta {font-size: 2.88rem;}
+	h3, .tera {font-size: 2.56rem;}
+	.giga {font-size: 2.28rem;}
+	h4, .mega {font-size: 2.03rem;}
+	h5, .kilo {font-size: 1.8rem;}
+	.hecto {font-size: 1.6rem;}
+	p, .uno {font-size: 1.41rem;}
+	h6, .centi {font-size: 1.26rem;}
+	.milli	{font-size: 1.12rem;}
+}
+
+/* For devices larger than 740px */
+@media (min-width: 46.25em) {
+	.bronto {font-size: 5.2rem;}
+	h1, .yotta {font-size: 4.62rem;}
+	.zetta {font-size: 4.11rem;}
+	h2, .exa {font-size: 3.65rem;}
+	.peta {font-size: 3.24rem;}
+	h3, .tera {font-size: 2.88rem;}
+	.giga {font-size: 2.56rem;}
+	h4, .mega {font-size: 2.28rem;}
+	h5, .kilo {font-size: 2.03rem;}
+	.hecto {font-size: 1.8rem;}
+	p, .uno {font-size: 1.6rem;}
+	h6, .centi {font-size: 1.42rem;}
+	.milli	{font-size: 1.26rem;}
+}
+
+h1 {
+	font-family:'livenation-extrabold';
+	color:#ffffff;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+a, a:link, a:visited {
+  color: #E21836;
+  text-decoration:none;
+}
+
+a:hover, a:focus {
+  color: #A91128;
+  text-decoration:underline;
+}
+
+.app-icon {
+	margin-bottom:30px;
 }
 
 .center-div {
@@ -26,60 +185,21 @@ body {
   width: 227px;
 }
 
-.tnc p, .tnc-mob p {
-  font-weight: 700;
+.row .tnc {
+	margin-top:4.0rem;
 }
 
-.tnc a, .tnc-mob a {
-  color: #e01839;
+.tnc p {
+	color: #8C8C8C;
+	text-align:center;
 }
 
-.terms-txt {
-  background-color: rgba(0, 0, 0, 0.4);
+.tnc a, .tnc a:link, .tnc a:visited {
+  color: #B6B6B6;
+  text-decoration:none;
 }
 
-.terms-txt h1 {
-  color: white;
-  margin-bottom: 30px;
-}
-
-.terms-txt p {
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  .content {
-    margin-left:100px;
-  }
-
-  .tnc {
-    text-align: center;
-  }
-
-  .tnc-mob {
-    display: none;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-  .iphone-img {
-    display: none;
-  }
-  .app-icon {
-    width: 25%;
-  }
-  .desc-text {
-    width:100%;
-  }
-
-  .tnc {
-    display: none;
-  }
-
-  .tnc-mob {
-    margin-top: 150px;
-    text-align: center;
-    font-size: 11px;
-  }
+.tnc a:hover, .tnc a:focus {
+  color: #D8D8D8;
+  text-decoration:underline;
 }

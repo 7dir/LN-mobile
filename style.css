@@ -162,7 +162,9 @@ a:hover, a:focus {
   text-decoration:underline;
 }
 
-.app-icon {margin-bottom:30px;}
+.app-icon {
+	margin-bottom:30px;
+}
 
 .center-div {
   display: block;
@@ -201,53 +203,3 @@ a:hover, a:focus {
   color: #D8D8D8;
   text-decoration:underline;
 }
-
-.terms-txt {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.terms-txt h1 {
-  color: white;
-  margin-bottom: 30px;
-}
-
-.terms-txt p {
-  color: white;
-}
-
-@media screen and (min-width: 768px) {
-  .content {
-    margin-left:100px;
-  }
-
-  .tnc {
-    text-align: center;
-  }
-
-  .tnc-mob {
-    display: none;
-  }
-
-}
-
-/*@media screen and (max-width: 768px) {
-  .iphone-img {
-    display: none;
-  }
-  .app-icon {
-    width: 25%;
-  }
-  .desc-text {
-    width:100%;
-  }
-
-  .tnc {
-    display: none;
-  }
-
-  .tnc-mob {
-    margin-top: 150px;
-    text-align: center;
-    font-size: 11px;
-  }
-}*/

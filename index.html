@@ -41,7 +41,7 @@
 	<meta name="theme-color" content="#ffffff">
 
     <link rel="canonical" href="https://www.livenation.com/mobile" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -51,36 +51,38 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="content">
-      <div style="float:left;" class="iphone-img">
-          <img src="images/iphone.png">
-          <div class="tnc">
-            <p>By continuing past this page you agree to our <a href="http://concerts.livenation.com/h/terms.html">Terms of Use<a>.</p>
-          </div>
-      </div>
-      <div>
-          <img class="app-icon center-div" src="images/app-icon.png">
-          <img class="desc-text center-div" src="images/desc-text.png">
-          <div class="dload-btns">
-            <a class="apple-div" href="https://livenation.app.link/taPUd0pRWE">
-              <img class="itunes-btn" src="images/itunes-store.png">
-            </a>
-            <a class="droid-div" href="https://livenation.app.link/xI7kcExRWE">
-              <img class="gplay-btn" src="images/google-play.png">
-            </a>
-          </div>
-      </div>
-   </div>
-   <div class="tnc-mob">
-     <p>By continuing past this page you agree to our <a href="http://concerts.livenation.com/h/terms.html">Terms of Use<a>.</p>
-   </div>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 d-none d-md-block iphone-img">
+			<img src="images/iphone.png">
+			<div class="tnc">
+			<p>By continuing past this page you agree to our <a href="http://concerts.livenation.com/h/terms.html">Terms of Use<a>.</p>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<img class="app-icon center-div" src="images/app-icon.png">
+			<img class="desc-text center-div" src="images/desc-text.png">
+			<div class="dload-btns">
+				<a class="apple-div" href="https://livenation.app.link/taPUd0pRWE">
+					<img class="itunes-btn" src="images/itunes-store.png">
+				</a>
+				<a class="droid-div" href="https://livenation.app.link/xI7kcExRWE">
+					<img class="gplay-btn" src="images/google-play.png">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tnc-mob">
+<p>By continuing past this page you agree to our <a href="http://concerts.livenation.com/h/terms.html">Terms of Use<a>.</p>
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function (){
        if(navigator.userAgent.toLowerCase().indexOf("android") > -1){

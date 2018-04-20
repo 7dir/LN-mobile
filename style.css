@@ -7,6 +7,8 @@ body {
   padding: 50px;
 }
 
+img {max-width:100%;}
+
 .center-div {
   display: block;
   margin-left: auto;
@@ -62,7 +64,7 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
   .iphone-img {
     display: none;
   }
@@ -82,4 +84,4 @@ body {
     text-align: center;
     font-size: 11px;
   }
-}
+}*/

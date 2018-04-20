@@ -72,14 +72,20 @@
     font-style: normal;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
-  background: url('images/background.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 50px;
-  font-family:'livenation-regular', 'proxima nova', arial, helvetica, sans-serif;
+	background: url('images/background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 50px;
+	font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	line-height: 1.4;
+	font-family:'livenation-regular', 'proxima nova', arial, helvetica, sans-serif;
 }
 
 img {max-width:100%;}
@@ -146,6 +152,16 @@ h1 {
 	text-transform:uppercase;
 }
 
+a, a:link, a:visited {
+  color: #E21836;
+  text-decoration:none;
+}
+
+a:hover, a:focus {
+  color: #A91128;
+  text-decoration:underline;
+}
+
 .app-icon {margin-bottom:30px;}
 
 .center-div {
@@ -167,12 +183,23 @@ h1 {
   width: 227px;
 }
 
-.tnc p, .tnc-mob p {
-  font-weight: 700;
+.row .tnc {
+	margin-top:4.0rem;
 }
 
-.tnc a, .tnc-mob a {
-  color: #e01839;
+.tnc p {
+	color:#5C5C5C;
+	text-align:center;
+}
+
+.tnc a, .tnc a:link, .tnc a:visited {
+  color: #8C8C8C;
+  text-decoration:none;
+}
+
+.tnc a:hover, .tnc a:focus {
+  color: #B6B6B6;
+  text-decoration:underline;
 }
 
 .terms-txt {

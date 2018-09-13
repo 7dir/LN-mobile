@@ -49,6 +49,33 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+
+        branch.init('YOUR-BRANCH-KEY');
+            function sendSMS(form) {
+                var phone = form.phone.value;
+                var linkData = {
+                    tags: [],
+                    channel: 'Website',
+                    feature: 'TextMeTheApp',
+                    data: {
+                        'foo': 'bar'
+                    }
+                };
+                var options = {};
+                var callback = function(err, result) {
+                    if (err) {
+                        alert("Sorry, something went wrong.");
+                    }
+                    else {
+                        alert("SMS sent!");
+                    }
+                };
+                branch.sendSMS(phone, linkData, options, callback);
+                form.phone.value = "";
+            }
+    </script>
   </head>
 <body>
 <div class="container">
@@ -66,6 +93,13 @@
 				<a class="droid-div" href="https://livenation.app.link/xI7kcExRWE">
 					<img class="gplay-btn" src="images/google-play.png" alt="" />
 				</a>
+			</div>
+			<div class="text-app-form">
+				<h3 class="text-center">Text me the app</h3>
+		        <form onsubmit="sendSMS(this); return false;" class="text-center">
+		            <input id="phone" name="phone" type="tel" placeholder="(323) 555-1234" />
+		            <input type="submit" class="btn btn-primary centi"/>
+		        </form>
 			</div>
 		</div>
 	</div>

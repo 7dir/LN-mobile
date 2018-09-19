@@ -85,7 +85,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	padding: 50px;
+	padding: 50px 20px;
 	font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
 	line-height: 1.4;
 	font-family:'livenation-regular', 'proxima nova', arial, helvetica, sans-serif;
@@ -200,8 +200,12 @@ a:hover, a:focus {
   width: 227px;
 }
 
-.row .tnc, .row .text-app-form {
+.row .text-app-form {
 	margin-top:4.0rem;
+}
+
+.row .tnc {
+	margin-top:8.0rem;
 }
 
 .tnc p {
@@ -227,7 +231,17 @@ input, .btn, .btn-primary {
 	border:0px;
 	outline:0px;
 	border-radius:0px;
-	margin-top:-1px;
+	min-height:37px;
+}
+
+.btn, .btn-primary {
+	margin-top:-2px;
+}
+
+@media (min-width: 500px) {
+	.btn, .btn-primary {
+		margin-top:-1px;
+	}
 }
 
 input[type="tel"] {
